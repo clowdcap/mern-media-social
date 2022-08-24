@@ -1,0 +1,93 @@
+.post {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    margin: 30px 0;
+    background: var(--bg_post);
+}
+
+    .post .post__wrapper {
+        padding: 10px;
+    }
+
+        .post__wrapper .post__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--cor_bot);
+        }
+
+            .post__top .post__top__left {
+                display: flex;
+                align-items: center;
+            }
+
+                .post__top__left .post__profile__img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .post__top__left .post__username {
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin: 0 10px;
+                    color: var(--usuario);
+                }
+
+                .post__top__left .post__date {
+                    font-size: 12px;
+                    color: var(--data);
+                }
+                
+            .post__top .post__top__rigth {
+                color: var(--cor_bot);
+            }
+
+        .post__wrapper .post__center {
+            margin: 20px 0;
+            width: 100%;
+        }
+
+            .post__center .post__text {
+                color: var(--tp);
+            }
+
+            .post__center .post__img {
+                margin-top: 20px;
+                width: 100%;
+                max-height: 500px;
+                object-fit: cover;
+            }
+        
+        .post__wrapper .post__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+            .post__bottom .post__bottom__left {
+                display: flex;
+                align-items: center;
+                color: var(--tp);
+            }
+
+                .post__bottom__left .like__icon {
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 5px;
+
+                    cursor: pointer;
+                }
+                .post__bottom__left .post__like__counter {
+                    font-size: 15px;
+                }
+
+            .post__bottom .post__bottom__right {
+                color: var(--comentario);
+            }
+
+                .post__bottom__right .post__comment__text {
+                    cursor: pointer;
+                    border-bottom: 1px dashed gray;
+                }

@@ -1,0 +1,129 @@
+.rightbar {
+    flex: 3.5;
+}
+
+    .rightbar .rightbar__wrapper {
+        padding: 20px 20px 0 0;
+    }
+
+        .rightbar__wrapper .birthday__container {
+            display: flex;
+            align-items: center;
+        }
+
+            .birthday__container .birthday__img {
+                width: 40px;
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            .birthday__container .birthday__text {
+                font-weight: 300;
+                font-size: 15px;
+                color: var(--tp)
+            }
+
+        .rightbar__wrapper .rightbar__ad {
+            width: 100%;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .rightbar__wrapper .rightbar__title {
+            margin-bottom: 20px;
+            color: var(--title__color)
+        }
+
+        .rightbar__wrapper .rightbar__friend__list {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            
+        }
+
+            .rightbar__friend__list .rightbar__friend {
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                
+            }
+
+            
+                .rightbar__friend .rightbar__profile__img__container {
+                    margin-right: 10px;
+                    position: relative;
+                }
+            
+                    .rightbar__profile__img__container .rightbar__profile__img {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    
+                    .rightbar__profile__img__container .rightbar__online {
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                        background-color: limegreen;
+                        position: absolute;
+                        top: -2px;
+                        right: 0;
+                        border: 2px solid white;
+                    }
+            
+            .rightbar__friend .rightbar__username {
+                font-weight: 500;
+                font-size: 15px;
+                color: var(--tp)
+            }
+
+        .rightbar__wrapper .rightbar__title {
+            color: var(--title__color);
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+            .rightbar__title .rightbar__info {
+                margin-bottom: 30px;
+            }
+
+                .rightbar__info .rightbar__info__item {
+                    margin-bottom: 10px;
+                }
+
+                    .rightbar__info__item .rightbar__info__key {
+                        color: var(--tp_sec);
+                        font-weight: 500;
+                        margin-right: 15px;
+                    }
+                    .rightbar__info__item .rightbar__info__value {
+                        color: var(--tp);
+                        font-weight: 300;
+                    }
+                    
+
+        .rightbar__wrapper .rightbar__followings{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+            .rightbar__followings .rightbar__following{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+
+                .rightbar__following .rightbar__following__img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+                
+                .rightbar__following .rightbar__following__name {
+                    color: var(--tp);
+                }

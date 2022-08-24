@@ -1,0 +1,83 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg_login);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .login .login__wrapper {
+        width: 70%;
+        height: 70%;
+        display: flex;
+    }
+
+        .login__wrapper 
+            .login__left, 
+            .login__right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+        }
+
+            .login__left .login__logo {
+                font-size: 50px;
+                font-weight: 800;
+                margin-bottom: 10px;
+                color: var(--title_login);
+            }
+
+            .login__left .login__desc {
+                font-size: 24px;
+                color: var(--tp);
+            }
+
+
+            .login__right .login__box {
+                height: 300px;
+                padding: 20px;
+                background-color: var(--bg_log);
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+                .login__box .login__input {
+                    height: 50px;
+                    border-radius: 10px;
+                    border: 1px solid var(--cinza);
+                    font-size: 18px;
+                    padding-left: 20px;
+                }
+
+                    .login__input:focus,
+                    .login__button:focus {
+                        outline: none;
+                    }
+
+                .login__box .login__button, 
+                .login__register__button {
+                    height: 50px;
+                    border-radius: 10px;
+                    border: none;
+                    color: var(--link_tp);
+                    font-size: 18px;
+                    font-weight: 500;
+                    cursor: pointer;
+                    background-color: var(--cor_botao);
+                }
+
+                .login__box .login__forgot {
+                    text-align: center;
+                    color: var(--preto);
+                }
+
+                .login__box .login__register__button {
+                    width: 60% !important;
+                    align-self: center;
+                    background-color: var(--link_tp);
+                    color: var(--cor_botao);
+                }
